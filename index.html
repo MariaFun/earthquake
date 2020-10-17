@@ -6,22 +6,16 @@
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@4"></script>
   <!-- Import vega-embed -->
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
-  
-  <!-- CSS file -->
-  <link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
-  
 </head>
 <body>
-  
-<div id="symbol_map_simp"></div>
+
+<div id="vis"></div>
 
 <script type="text/javascript">
-
-  var spec2 = "map/symbol_map_simp.json";
-  vegaEmbed('#symbol_map_simp.json', spec2).then(function(result) {
+  var spec = "https://mariafun.github.io/earthquake/main/map/symbol_map_simp.json";
+  vegaEmbed('#vis', spec).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
 </script>
-
 </body>
 </html>
